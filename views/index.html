@@ -14,7 +14,7 @@ for (i in ls('package:datasets')){
 	if (counter %% numcols == 0) cat("</tr><tr>")
 %>
 <td>
-<%=i%>
+<a href="/dataset/<%=i%>/"><%=i%></a>
 [ <a href="/dataset/<%=i%>.json">json </a>]
 [ <a href="/dataset/<%=i%>.png">png </a>]
 </td>
